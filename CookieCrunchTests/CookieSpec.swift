@@ -46,6 +46,16 @@ class CookieSpec: QuickSpec {
             it("has a type") {
                 expect(cookie!.cookieType).to(equal(CookieType.Cupcake))
             }
+            
+            it("does not equal another cookie with a different column") {
+                let anotherCookie = Cookie(column: 2, row: 2, cookieType: CookieType.Danish)
+                expect(cookie).notTo(equal(anotherCookie))
+            }
+            
+            it("equals a different cookie with the same row and column") {
+                let anotherCookie = Cookie(column: 1, row: 2, cookieType: CookieType.Danish)
+                expect(cookie).to(equal(anotherCookie))
+            }
         }
     }
 }
