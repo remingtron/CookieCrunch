@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-CookieCrunch-CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CookieCrunch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CookieCrunchTests-Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CookieCrunchTests-Quick.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CookieCrunchTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>007FACD6C6A08F18B4D082AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A2FD314F803A9A8492696E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABE1E60987A3DE30D39EBDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECE2779250674E88097C347E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3156C4CAD42B0E3D7F6E675</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

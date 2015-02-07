@@ -1,0 +1,20 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Nimble (0.3.0)
+  - Quick (0.2.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - Nimble
+  - Quick
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  Nimble: a4d9d978129e83d73e33b7d8bce57443bd556068
+  Quick: 7b89ff625e72ef931c2a9ef2f25ac3a9d2457763
+
+COCOAPODS: 0.36.0.beta.2
