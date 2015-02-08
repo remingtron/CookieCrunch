@@ -38,6 +38,7 @@ class GameViewController: UIViewController {
         
         level = Level(filename: "Level_1")
         scene.level = level
+        scene.addTiles()
         
         // Present the scene.
         skView.presentScene(scene)
