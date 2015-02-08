@@ -1,0 +1,1 @@
+PODS_COOKIECRUNCH_CAL_CALABASH_OTHER_LDFLAGS = -l"stdc++" -framework "CFNetwork" -force_load $(PODS_ROOT)/Calabash/calabash.framework/calabash

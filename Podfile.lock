@@ -1,4 +1,5 @@
 PODS:
+  - Calabash (0.12.0)
   - CocoaLumberjack (1.9.2):
     - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
@@ -8,11 +9,13 @@ PODS:
   - Quick (0.2.2)
 
 DEPENDENCIES:
+  - Calabash (>= 0.9.126)
   - CocoaLumberjack
   - Nimble
   - Quick
 
 SPEC CHECKSUMS:
+  Calabash: 6d062673d364c675806c6c67cfe881308a15d2a8
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   Nimble: a4d9d978129e83d73e33b7d8bce57443bd556068
   Quick: 7b89ff625e72ef931c2a9ef2f25ac3a9d2457763
