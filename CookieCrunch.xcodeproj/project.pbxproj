@@ -12,6 +12,13 @@
 		C0258F681A86C09C00878C99 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0258F671A86C09C00878C99 /* Array2D.swift */; };
 		C0258F6A1A86C21600878C99 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0258F691A86C21600878C99 /* Set.swift */; };
 		C0258F6C1A86C2DF00878C99 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0258F6B1A86C2DF00878C99 /* Level.swift */; };
+		C0258F731A87035F00878C99 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = C0258F6E1A87035F00878C99 /* Level_0.json */; };
+		C0258F741A87035F00878C99 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = C0258F6F1A87035F00878C99 /* Level_1.json */; };
+		C0258F751A87035F00878C99 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = C0258F701A87035F00878C99 /* Level_2.json */; };
+		C0258F761A87035F00878C99 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = C0258F711A87035F00878C99 /* Level_3.json */; };
+		C0258F771A87035F00878C99 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = C0258F721A87035F00878C99 /* Level_4.json */; };
+		C0258F791A87038C00878C99 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0258F781A87038C00878C99 /* Tile.swift */; };
+		C0258F7B1A8703EF00878C99 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0258F7A1A8703EF00878C99 /* Extensions.swift */; };
 		C071339A1A85C0C5008B8DC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07133991A85C0C5008B8DC8 /* AppDelegate.swift */; };
 		C071339E1A85C0C5008B8DC8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071339D1A85C0C5008B8DC8 /* GameScene.swift */; };
 		C07133A01A85C0C5008B8DC8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071339F1A85C0C5008B8DC8 /* GameViewController.swift */; };
@@ -43,6 +50,13 @@
 		C0258F671A86C09C00878C99 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		C0258F691A86C21600878C99 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		C0258F6B1A86C2DF00878C99 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		C0258F6E1A87035F00878C99 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		C0258F6F1A87035F00878C99 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		C0258F701A87035F00878C99 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		C0258F711A87035F00878C99 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		C0258F721A87035F00878C99 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		C0258F781A87038C00878C99 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		C0258F7A1A8703EF00878C99 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C07133941A85C0C5008B8DC8 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07133981A85C0C5008B8DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07133991A85C0C5008B8DC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +102,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0258F6D1A87035F00878C99 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				C0258F6E1A87035F00878C99 /* Level_0.json */,
+				C0258F6F1A87035F00878C99 /* Level_1.json */,
+				C0258F781A87038C00878C99 /* Tile.swift */,
+				C0258F701A87035F00878C99 /* Level_2.json */,
+				C0258F711A87035F00878C99 /* Level_3.json */,
+				C0258F721A87035F00878C99 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
 		C071338B1A85C0C5008B8DC8 = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +145,11 @@
 				C071339F1A85C0C5008B8DC8 /* GameViewController.swift */,
 				C07133A41A85C0C5008B8DC8 /* Images.xcassets */,
 				C07133A61A85C0C5008B8DC8 /* LaunchScreen.xib */,
+				C0258F6B1A86C2DF00878C99 /* Level.swift */,
+				C0258F7A1A8703EF00878C99 /* Extensions.swift */,
+				C0258F6D1A87035F00878C99 /* Levels */,
 				C07133A11A85C0C5008B8DC8 /* Main.storyboard */,
 				C0258F691A86C21600878C99 /* Set.swift */,
-				C0258F6B1A86C2DF00878C99 /* Level.swift */,
 				C0FF6C0C1A86B659001099C3 /* Sprites.atlas */,
 				C07133971A85C0C5008B8DC8 /* Supporting Files */,
 			);
@@ -249,8 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07133A81A85C0C5008B8DC8 /* LaunchScreen.xib in Resources */,
+				C0258F771A87035F00878C99 /* Level_4.json in Resources */,
+				C0258F751A87035F00878C99 /* Level_2.json in Resources */,
+				C0258F731A87035F00878C99 /* Level_0.json in Resources */,
 				C07133A51A85C0C5008B8DC8 /* Images.xcassets in Resources */,
 				C07133A31A85C0C5008B8DC8 /* Main.storyboard in Resources */,
+				C0258F741A87035F00878C99 /* Level_1.json in Resources */,
+				C0258F761A87035F00878C99 /* Level_3.json in Resources */,
 				C0FF6C0D1A86B659001099C3 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +382,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C071339E1A85C0C5008B8DC8 /* GameScene.swift in Sources */,
+				C0258F7B1A8703EF00878C99 /* Extensions.swift in Sources */,
 				C0258F6C1A86C2DF00878C99 /* Level.swift in Sources */,
 				C0FF6C0F1A86B6F5001099C3 /* Cookie.swift in Sources */,
+				C0258F791A87038C00878C99 /* Tile.swift in Sources */,
 				C0258F6A1A86C21600878C99 /* Set.swift in Sources */,
 				C07133A01A85C0C5008B8DC8 /* GameViewController.swift in Sources */,
 				C071339A1A85C0C5008B8DC8 /* AppDelegate.swift in Sources */,
