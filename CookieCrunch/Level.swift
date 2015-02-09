@@ -53,7 +53,7 @@ class Level {
             for column in 0..<NumColumns {
                 
                 if tiles[column, row] != nil {
-                    var cookieType = CookieType.random()
+                    var cookieType = cookieTypeThatDoesNotCreateSet(column, row: row)
                 
                     let cookie = Cookie(column: column, row: row, cookieType: cookieType)
                     cookies[column, row] = cookie
@@ -63,6 +63,21 @@ class Level {
             }
         }
         return set
+    }
+    
+    func cookieTypeThatDoesNotCreateSet(column: Int, row: Int) -> CookieType {
+        var cookieType: CookieType
+        do {
+            cookieType = CookieType.random()
+        }
+            while (column >= 2 &&
+                    cookies[column - 1, row]?.cookieType == cookieType &&
+                    cookies[column - 2, row]?.cookieType == cookieType)
+                    ||
+                    (row >= 2 &&
+                    cookies[column, row - 1]?.cookieType == cookieType &&
+                    cookies[column, row - 2]?.cookieType == cookieType)
+        return cookieType
     }
     
     func performSwap(swap: Swap) {
