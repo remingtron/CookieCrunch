@@ -8,7 +8,6 @@
 
 import Quick
 import Nimble
-import CookieCrunch
 
 class CookieTypeSpec: QuickSpec {
     override func spec() {

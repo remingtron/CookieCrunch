@@ -8,7 +8,6 @@
 
 import Quick
 import Nimble
-import CookieCrunch
 
 class GameSceneSpec: QuickSpec {
     override func spec() {
