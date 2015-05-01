@@ -77,8 +77,8 @@ class GameScene: SKScene {
             y: CGFloat(row)*TileHeight + TileHeight/2)
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        let touch = touches.anyObject() as UITouch // works since there's only one item in the set?
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let touch = touches.first as! UITouch // works since there's only one item in the set?
         let location = touch.locationInNode(cookiesLayer)
         
         // finds out if the touch is inside a square on the level grid
@@ -105,13 +105,13 @@ class GameScene: SKScene {
         }
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         // either the swipe began outside the valid area or the game has already swapped the cookies 
         // and you need to ignore the rest of the motion
         if swipeFromColumn == nil { return }
         
         // similar to what touchesBegan() does to calculate the row and column numbers
-        let touch = touches.anyObject() as UITouch
+        let touch = touches.first as! UITouch
         let location = touch.locationInNode(cookiesLayer)
         
         let (success, column, row) = convertPoint(location)
@@ -181,7 +181,7 @@ class GameScene: SKScene {
         spriteB.runAction(moveB)
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         let userDidNotSwipe = (swipeFromColumn != nil)
         if selectionSprite.parent != nil && userDidNotSwipe {
             hideSelectionIndicator()
@@ -192,7 +192,7 @@ class GameScene: SKScene {
     }
     
     // when ios interrupts a touch (e.g. phone call)
-    override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesCancelled(touches: Set<NSObject>, withEvent event: UIEvent) {
         touchesEnded(touches, withEvent: event)
     }
     

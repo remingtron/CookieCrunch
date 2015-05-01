@@ -18,7 +18,7 @@ class Level {
     init(filename: String) {
         if let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename) {
             if let tilesArray: AnyObject = dictionary["tiles"] {
-                for (row, rowArray) in enumerate(tilesArray as [[Int]]) {
+                for (row, rowArray) in enumerate(tilesArray as! [[Int]]) {
                     let tileRow = NumRows - row - 1
                     for (column, value) in enumerate(rowArray) {
                         if value == 1 {
@@ -58,7 +58,7 @@ class Level {
                     let cookie = Cookie(column: column, row: row, cookieType: cookieType)
                     cookies[column, row] = cookie
                 
-                    set.addElement(cookie)
+                    set.insert(cookie)
                 }
             }
         }

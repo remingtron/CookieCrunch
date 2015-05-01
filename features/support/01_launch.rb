@@ -20,7 +20,7 @@ require 'calabash-cucumber/launcher'
 # However the recommended approach is to let Calabash find the app itself
 # or set the environment variable APP_BUNDLE_PATH
 
-ENV['DEVICE_TARGET']="iPad Air (8.1 Simulator)"
+ENV['DEVICE_TARGET'] = ENV['DEVICE_TARGET'] || "iPad Air (8.1 Simulator)"
 
 Before do |scenario|
   @calabash_launcher = Calabash::Cucumber::Launcher.new

@@ -29,7 +29,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         // Configure the view.
-        let skView = view as SKView
+        let skView = view as! SKView
         skView.multipleTouchEnabled = false
         
         // Create and configure the scene.
